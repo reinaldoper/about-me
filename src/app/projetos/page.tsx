@@ -59,7 +59,7 @@ export default function Projetos() {
       {allFa && (
         <div className="flex flex-col">
           <h1 className="hover:scale-y-210 font-bold flex justify-center items-center text-amber-300 mb-10">
-            Projetos
+            Projetos em destaques abaixo:
           </h1>
 
           <div className="flex justify-center items-center gap-5">
