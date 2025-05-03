@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💻 About Me - Portfólio Pessoal
 
-## Getting Started
+- Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos, certificações e experiências como desenvolvedor full-stack. A aplicação é construída com **Next.js**, utilizando **React** e **TailwindCSS** para criar uma interface moderna, responsiva e de fácil navegação.
 
-First, run the development server:
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Frontend**:
+  - [React](https://reactjs.org/) - Biblioteca para construção de interfaces de usuário.
+  - [Next.js](https://nextjs.org/) - Framework React para renderização no lado do servidor e geração de sites estáticos.
+  - [TailwindCSS](https://tailwindcss.com/) - Framework CSS utilitário para estilização rápida e responsiva.
+
+
+- **Outras Ferramentas**:
+  - [React Icons](https://react-icons.github.io/react-icons/) - Biblioteca de ícones para React.
+  - [Google Fonts](https://fonts.google.com/) - Fontes personalizadas para estilização.
+  - [Vercel](https://vercel.com/) - Plataforma de hospedagem para projetos Next.js.
+
+---
+
+## 📂 Estrutura do Projeto
+
+Abaixo está uma visão geral da estrutura de diretórios do projeto:
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/ ├── about/ # Dados sobre mim e certificações ├── app/ # Páginas principais do portfólio │ ├── page.tsx # Página inicial │ ├── tech/ # Tecnologias utilizadas │ ├── projetos/ # Projetos desenvolvidos ├── components/ # Componentes reutilizáveis ├── styles/ # Estilos globais e configurações do TailwindCSS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌟 Funcionalidades
 
-## Learn More
+- **Página Inicial**:
+  - Apresentação pessoal com uma seção "Hero".
+  - Destaque para habilidades e ferramentas utilizadas.
 
-To learn more about Next.js, take a look at the following resources:
+- **Tecnologias**:
+  - Lista de tecnologias organizadas por categorias (Frontend, Backend, Mobile).
+  - Ícones e descrições para cada tecnologia.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Projetos**:
+  - Exibição de projetos desenvolvidos, com links para repositórios e demonstrações.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Certificações**:
+  - Certificados organizados por categorias (Java, Python, Google).
+  - Links para visualização dos certificados.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖼️ Prévia do Projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Página Inicial
+![Página Inicial](https://via.placeholder.com/800x400?text=Preview+da+Página+Inicial)
+
+### Tecnologias
+![Tecnologias](https://via.placeholder.com/800x400?text=Preview+das+Tecnologias)
+
+### Projetos
+![Projetos](https://via.placeholder.com/800x400?text=Preview+dos+Projetos)
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado na máquina.
+- Gerenciador de pacotes (npm ou yarn).
+
+### Passos
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/about-me.git
+
+   cd about-me
+   &&
+   npm install
+   &&
+   npm run dev
+   ```
+
+---
+
+🙌 Agradecimentos
+- Next.js
+- TailwindCSS
+- React Icons
