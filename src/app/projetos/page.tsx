@@ -64,19 +64,19 @@ export default function Projetos() {
 
           <div className="flex justify-center items-center gap-5">
             <FaNodeJs
-              className="w-20 h-20 cursor-pointer text-blue-400"
+              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 lg:h-20 cursor-pointer text-blue-400"
               onClick={handleClickNode}
             />
             <FaJs
-              className="w-20 ml-5 h-20 cursor-pointer text-blue-400"
+              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 lg:h-20 cursor-pointer text-blue-400"
               onClick={handleClickJs}
             />
             <FaAngular
-              className="w-20 ml-5 h-20 cursor-pointer text-blue-400"
+              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 lg:h-20 cursor-pointer text-blue-400"
               onClick={handleClickAngular}
             />
             <Image
-              className="w-20 ml-5 h-20 cursor-pointer text-blue-400"
+              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 lg:h-20 cursor-pointer"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
               alt="nextjs"
               width={20}
@@ -84,7 +84,7 @@ export default function Projetos() {
               onClick={handleClickNext}
             />
             <FaReact
-              className="w-20 ml-5 h-20 cursor-pointer text-blue-400"
+              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 lg:h-20 cursor-pointer text-blue-400"
               onClick={handleClickReactNative}
             />
           </div>
