@@ -25,7 +25,27 @@ Abaixo está uma visão geral da estrutura de diretórios do projeto:
 
 
 ```bash
-src/ ├── about/ # Dados sobre mim e certificações ├── app/ # Páginas principais do portfólio │ ├── page.tsx # Página inicial │ ├── tech/ # Tecnologias utilizadas │ ├── projetos/ # Projetos desenvolvidos ├── components/ # Componentes reutilizáveis ├── styles/ # Estilos globais e configurações do TailwindCSS
+├── eslint.config.mjs
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── images
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+├── src
+│   ├── about
+│   ├── app
+│   ├── components
+│   └── techs
+├── tailwind.config.ts
+└── tsconfig.json
 ```
 
 

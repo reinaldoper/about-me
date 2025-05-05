@@ -16,7 +16,7 @@ export const ReactNative = () => {
             rel="noopener noreferrer"
             className="hover:scale-310 transform transition duration-300 ease-in-out"
           >
-            <FaReact className="w-20 h-20 cursor-pointer text-blue-400" />
+            <FaReact className="w-10 h-10 cursor-pointer text-blue-400" />
           </a>
           <p className="text-center text-black">{projeto.description}</p>
           <p className="text-center text-black">{projeto.date}</p>

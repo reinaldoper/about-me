@@ -51,8 +51,7 @@ export default function Projetos() {
     }, 4000);
   };
 
-  const allFa =
-    !showNode && !showJs && !showAngular && !showNext && !showReactNative;
+  const allFa = !showNode && !showJs && !showAngular && !showNext && !showReactNative;
 
   return (
     <div className="relative min-h-screen flex font-extralight justify-center items-center">
@@ -63,30 +62,56 @@ export default function Projetos() {
           </h1>
 
           <div className="flex justify-center items-center gap-1">
-            <FaNodeJs
-              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 cursor-pointer text-blue-400"
-              onClick={handleClickNode}
-            />
-            <FaJs
-              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20  cursor-pointer text-blue-400"
-              onClick={handleClickJs}
-            />
-            <FaAngular
-              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20  cursor-pointer text-blue-400"
-              onClick={handleClickAngular}
-            />
-            <Image
-              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 cursor-pointer"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-              alt="nextjs"
-              width={20}
-              height={20}
-              onClick={handleClickNext}
-            />
-            <FaReact
-              className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20  cursor-pointer text-blue-400"
-              onClick={handleClickReactNative}
-            />
+            <div className="relative group">
+              <FaNodeJs
+                className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 cursor-pointer text-blue-400"
+                onClick={handleClickNode}
+              />
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
+                NodeJs
+              </span>
+            </div>
+            <div className="relative group">
+              <FaJs
+                className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20  cursor-pointer text-blue-400"
+                onClick={handleClickJs}
+              />
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
+                JavaScript
+              </span>
+            </div>
+            <div className="relative group">
+              <FaAngular
+                className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20  cursor-pointer text-blue-400"
+                onClick={handleClickAngular}
+              />
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
+                Angular
+              </span>
+            </div>
+            <div className="relative group">
+              <Image
+                className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 cursor-pointer"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="nextjs"
+                width={20}
+                height={20}
+                onClick={handleClickNext}
+              />
+              
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
+                NextJs
+              </span>
+            </div>
+            <div className="relative group">
+              <FaReact
+                className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20  cursor-pointer text-blue-400"
+                onClick={handleClickReactNative}
+              />
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
+                  ReactNative
+              </span>
+            </div>
           </div>
         </div>
       )}
