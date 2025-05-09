@@ -61,7 +61,7 @@ export default function Projetos() {
             Projetos em destaques abaixo:
           </h1>
 
-          <div className="flex justify-center items-center gap-1">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <div className="relative group">
               <FaNodeJs
                 className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 cursor-pointer text-blue-400"
@@ -94,8 +94,8 @@ export default function Projetos() {
                 className="w-20 h-20 sm:w-16 sm:h-16 md:w-12 md:h-12 lg:w-20 cursor-pointer"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
                 alt="nextjs"
-                width={20}
-                height={20}
+                width={50}
+                height={50}
                 onClick={handleClickNext}
               />
               
