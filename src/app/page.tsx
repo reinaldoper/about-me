@@ -47,6 +47,11 @@ export default function Home() {
         <p className="mt-4 text-center max-w-2xl mx-auto">
           {about.strong}
         </p>
+        <br />
+        <p className="mt-4 text-center max-w-2xl mx-auto">
+          {about.contact}
+        </p>
+        <br />
       </section>
     </div>
   );

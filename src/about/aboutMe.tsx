@@ -23,5 +23,18 @@ export const about = {
   
   strong: `
   🔗 **Especialidade**: Integração com APIs — conecto sistemas para entregar soluções completas e funcionais.
-  📈 **Diferencial**: Mentalidade analítica e foco em performance — não entrego só código, entrego valor.`
+
+  📈 **Diferencial**: Mentalidade analítica e foco em performance — não entrego só código, entrego valor.
+
+  🚀 **Experiência prática**: Criação de aplicações robustas com React Native, integração com backends RESTfull, e uso de ferramentas modernas como Docker, PostgreSQL e Firebase.
+
+  🧠 **Visão de produto**: Entendo as necessidades do negócio e transformo requisitos em soluções que realmente fazem diferença para o usuário.
+
+  🛠️ **Stack atual**: React Native, TypeScript, Node.js, Express, MongoDB, MySQL, Tailwind, Docker.
+
+  🤝 **Colaboração**: Trabalho bem em equipe, compartilho conhecimento e ajudo a elevar o nível técnico do time.
+`,
+
+  contact: `
+  📧 **Vamos conversar?** Estou sempre aberto a novas oportunidades e colaborações.`
 };
