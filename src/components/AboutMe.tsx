@@ -1,11 +1,9 @@
-'use client'
+'use client';
 
 import React from "react";
 import { about } from "@/about/aboutMe";
-import { FaCertificate } from "react-icons/fa";
 import { certificates } from "@/about/certifications";
-
-
+import CertificationList from "@/components/CertificationList";
 
 const AboutMe = () => {
   return (
@@ -19,92 +17,14 @@ const AboutMe = () => {
       </div>
       <br />
       <hr />
-      <h1 className="mt-5 flex items-center justify-center text-justify font-roboto text-emerald-400 font-bold">Java Certifications</h1>
-      <br />
-      <div className="flex mb-5 flex-wrap justify-center items-center gap-4">
-        {certificates.dioJava.map((certificate) => (
-          <div key={certificate.id} className="flex flex-col items-center">
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer" className="hover:scale-210 transform transition duration-300 ease-in-out">
-              <FaCertificate className="w-10 h-10 cursor-pointer text-blue-400" />
-            </a>
-            <p className="text-center">{certificate.title}</p>
-            <p className="text-center">{certificate.description}</p>
-            <p className="text-center">{certificate.date}</p>
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer"></a>
-          </div>
-        ))}
-      </div>
-      <br />
-      <hr />
-      <h1 className="mt-5 flex items-center justify-center text-justify font-roboto text-emerald-400 font-bold">Python Certifications</h1>
-      <br />
-      <div className="flex flex-wrap justify-center items-center gap-4 mb-5">
-        {certificates.dioPython.map((certificate) => (
-          <div key={certificate.id} className="flex flex-col items-center">
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer" className="hover:scale-210 transform transition duration-300 ease-in-out">
-              <FaCertificate className="w-10 h-10 cursor-pointer text-blue-400" />
-            </a>
-            <p className="text-center">{certificate.title}</p>
-            <p className="text-center">{certificate.description}</p>
-            <p className="text-center">{certificate.date}</p>
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer"></a>
-          </div>
-        ))}
-      </div>
-      <br />
-      <hr />
-      <h1 className="mt-5 flex items-center justify-center text-justify font-roboto text-emerald-400 font-bold">Google Certifications</h1>
-      <br />
-      <div className="flex mb-5 flex-wrap justify-center items-center gap-4">
-        {certificates.google.map((certificate) => (
-          <div key={certificate.id} className="flex flex-col items-center">
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer" className="hover:scale-210 transform transition duration-300 ease-in-out">
-              <FaCertificate className="w-10 h-10 cursor-pointer text-blue-400" />
-            </a>
-            <p className="text-center">{certificate.title}</p>
-            <p className="text-center">{certificate.description}</p>
-            <p className="text-center">{certificate.date}</p>
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer"></a>
-          </div>
-        ))}
-      </div>
-      <br />
-      <hr />
-      <h1 className="mt-5 flex items-center justify-center text-justify font-roboto text-emerald-400 font-bold">Trybe Certifications</h1>
-      <br />
-      <div className="flex mb-5 flex-wrap justify-center items-center gap-4">
-        {certificates.trybe.map((certificate) => (
-          <div key={certificate.id} className="flex flex-col items-center">
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer" className="hover:scale-210 transform transition duration-300 ease-in-out">
-              <FaCertificate className="w-10 h-10 cursor-pointer text-blue-400" />
-            </a>
-            <p className="text-center">{certificate.title}</p>
-            <p className="text-center">{certificate.description}</p>
-            <p className="text-center">{certificate.date}</p>
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer"></a>
-          </div>
-        ))}
-      </div>
-      <br />
-      <hr />
-      <h1 className="mt-5 flex items-center justify-center text-justify font-roboto text-emerald-400 font-bold">Zylyty Certifications</h1>
-      <br />
-      <div className="flex mb-5 flex-wrap justify-center items-center gap-4">
-        {certificates.zylyty.map((certificate) => (
-          <div key={certificate.id} className="flex flex-col items-center">
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer" className="hover:scale-210 transform transition duration-300 ease-in-out">
-              <FaCertificate className="w-10 h-10 cursor-pointer text-blue-400" />
-            </a>
-            <p className="text-center">{certificate.title}</p>
-            <p className="text-center">{certificate.description}</p>
-            <p className="text-center">{certificate.date}</p>
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer"></a>
-          </div>
-        ))}
-      </div>
+
+      <CertificationList title="Java Certifications" certifications={certificates.dioJava} />
+      <CertificationList title="Python Certifications" certifications={certificates.dioPython} />
+      <CertificationList title="Google Certifications" certifications={certificates.google} />
+      <CertificationList title="Trybe Certifications" certifications={certificates.trybe} />
+      <CertificationList title="Zylyty Certifications" certifications={certificates.zylyty} />
     </div>
   );
-} 
+};
 
-
-export default AboutMe
+export default AboutMe;
