@@ -22,6 +22,29 @@ export const certificates = {
       link: "https://hermes.dio.me/certificates/XV79XYML.pdf"
     }
   ],
+  zylyty: [
+    {
+      id: 1,
+      title: "Frontend Developer",
+      description: "Zylyty",
+      date: "2024",
+      link: "https://zylyty.com/cv?userId=32d355ac-538f-4fe0-a084-a5bef0a9f364&type=FRONTEND"
+    },
+    {
+      id: 2,
+      title: "Backend Developer NodeJs",
+      description: "Zylyty",
+      date: "2024",
+      link: "https://zylyty.com/cv?userId=32d355ac-538f-4fe0-a084-a5bef0a9f364&type=BACKEND"
+    },
+    {
+      id: 3,
+      title: "Backend Developer TypeScript",
+      description: "Zylyty",
+      date: "2024",
+      link: "https://zylyty.com/cv?userId=32d355ac-538f-4fe0-a084-a5bef0a9f364&type=BACKEND"
+    }
+  ],
   dioPython: [
     {
       id: 1,
