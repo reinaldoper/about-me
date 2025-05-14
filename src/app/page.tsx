@@ -34,7 +34,7 @@ export default function Home() {
           />
         </motion.div>
       </div>
-      <section className="py-10">
+      <section className="py-10 text-justify">
         <p className="flex flex-wrap text-justify ml-20 me-20 font-roboto italic w-dvw-40 text-foreground font-bold">
           {about.data}
         </p>
