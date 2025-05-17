@@ -42,9 +42,9 @@ export const projetos = {
     {
       id: 3,
       title: "NextJs - Web",
-      description: "Projeto em NextJs que renderiza times de futebol e atualiza jogadores.",
+      description: "Carteira digital.",
       date: "2025",
-      link: "https://github.com/reinaldoper/football"
+      link: "https://meios-de-pagamentos.netlify.app/"
     }
   ],
   javaScript: [
