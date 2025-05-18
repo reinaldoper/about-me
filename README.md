@@ -70,18 +70,6 @@ Abaixo está uma visão geral da estrutura de diretórios do projeto:
 
 ---
 
-## 🖼️ Prévia do Projeto
-
-### Página Inicial
-![Página Inicial](https://via.placeholder.com/800x400?text=Preview+da+Página+Inicial)
-
-### Tecnologias
-![Tecnologias](https://via.placeholder.com/800x400?text=Preview+das+Tecnologias)
-
-### Projetos
-![Projetos](https://via.placeholder.com/800x400?text=Preview+dos+Projetos)
-
----
 
 ## 🛠️ Como Executar o Projeto
 
