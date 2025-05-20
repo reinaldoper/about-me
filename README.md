@@ -29,9 +29,6 @@ Abaixo está uma visão geral da estrutura de diretórios do projeto:
 
 
 ```bash
-├── eslint.config.mjs
-├── next.config.ts
-├── next-env.d.ts
 ├── package.json
 ├── package-lock.json
 ├── postcss.config.mjs
@@ -39,15 +36,43 @@ Abaixo está uma visão geral da estrutura de diretórios do projeto:
 │   ├── file.svg
 │   ├── globe.svg
 │   ├── images
+│   │   ├── eu.png
+│   │   ├── lua.png
+│   │   └── store.jpeg
 │   ├── next.svg
 │   ├── vercel.svg
 │   └── window.svg
 ├── README.md
 ├── src
 │   ├── about
+│   │   ├── aboutMe.tsx
+│   │   ├── certifications.tsx
+│   │   └── projetos.tsx
 │   ├── app
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── projetos
+│   │   │   └── page.tsx
+│   │   ├── sobre
+│   │   │   └── page.tsx
+│   │   └── tech
+│   │       └── page.tsx
 │   ├── components
-│   └── techs
+│   │   ├── AboutMe.tsx
+│   │   ├── Angular.tsx
+│   │   ├── CertificationList.tsx
+│   │   ├── JavaScript.tsx
+│   │   ├── Move.tsx
+│   │   ├── NextJs.tsx
+│   │   ├── NodeJs.tsx
+│   │   ├── ReactNative.tsx
+│   │   └── TechCarousel.tsx
+│   ├── techs
+│   │   └── tecnologias.tsx
+│   └── types
+│       └── types.ts
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
