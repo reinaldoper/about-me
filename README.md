@@ -4,6 +4,10 @@
 
 ---
 
+![License](https://img.shields.io/github/license/reinaldoper/about-me)
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Frontend**:
