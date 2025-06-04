@@ -4,6 +4,7 @@ import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import "./globals.css";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function RootLayout({
   children,
@@ -97,7 +98,7 @@ export default function RootLayout({
             </li>
           </ul>
         </nav>
-        <body>{children}</body>
+        <body suppressHydrationWarning>{children}</body>
 
         <footer className="bg-gray-800 p-6 min-h-full min-w-full row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
           <span className="text-white">Entre em contato:</span>
