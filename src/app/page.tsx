@@ -6,15 +6,28 @@ import { about } from "@/about/aboutMe";
 
 export default function Home() {
   const [show, setShow] = useState(false);
+
   return (
-    <div className={!show ? "relative flex flex-col items-center justify-center min-h-screen w-full" : "relative dark flex flex-col items-center justify-center min-h-screen w-full"}>
+    <div
+      className={
+        !show
+          ? "relative flex flex-col items-center justify-center min-h-screen w-full"
+          : "relative flex flex-col items-center justify-center min-h-screen w-full bg-dark text-white"
+      }
+    >
       <div>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className={!show ? "text-4xl font-bold text-gray-800": "text-4xl font-bold white"}>
+          <h1
+            className={
+              !show
+                ? "text-4xl font-bold text-gray-800"
+                : "text-4xl font-bold text-white"
+            }
+          >
             Bem-vindo ao meu portfólio!
           </h1>
           <Image
@@ -40,17 +53,13 @@ export default function Home() {
         </p>
         <br />
         <p className="mt-4 text-center max-w-2xl mx-auto">
-          Desenvolvedor com experiência em frontend e backend, quero ajudar
-          você a criar experiências digitais impactantes.
+          Desenvolvedor com experiência em frontend e backend, quero ajudar você
+          a criar experiências digitais impactantes.
         </p>
         <br />
-        <p className="mt-4 text-center max-w-2xl mx-auto">
-          {about.strong}
-        </p>
+        <p className="mt-4 text-center max-w-2xl mx-auto">{about.strong}</p>
         <br />
-        <p className="mt-4 text-center max-w-2xl mx-auto">
-          {about.contact}
-        </p>
+        <p className="mt-4 text-center max-w-2xl mx-auto">{about.contact}</p>
         <br />
       </section>
     </div>

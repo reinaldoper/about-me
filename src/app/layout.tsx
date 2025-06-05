@@ -122,7 +122,7 @@ export default function RootLayout({
               <SiGmail size={24} color="#D14836" />
             </a>
 
-            <span>Desenvolvido por</span>
+            <span className="text-white">Desenvolvido por</span>
             <a
               href="https://www.linkedin.com/in/reinaldo-pereira/"
               target="_blank"
