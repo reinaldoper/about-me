@@ -8,6 +8,7 @@ import { Angular } from "@/components/Angular";
 import { NextJs } from "@/components/NextJs";
 import { ReactNative } from "@/components/ReactNative";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Projetos() {
   const [showNode, setShowNode] = useState(false);
@@ -51,7 +52,8 @@ export default function Projetos() {
     }, 4000);
   };
 
-  const allFa = !showNode && !showJs && !showAngular && !showNext && !showReactNative;
+  const allFa =
+    !showNode && !showJs && !showAngular && !showNext && !showReactNative;
 
   return (
     <div className="relative min-h-screen flex font-extralight justify-center items-center">
@@ -98,7 +100,7 @@ export default function Projetos() {
                 height={50}
                 onClick={handleClickNext}
               />
-              
+
               <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
                 NextJs
               </span>
@@ -109,7 +111,7 @@ export default function Projetos() {
                 onClick={handleClickReactNative}
               />
               <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm px-2 py-1 rounded transition-opacity duration-300">
-                  ReactNative
+                ReactNative
               </span>
             </div>
           </div>
@@ -127,7 +129,13 @@ export default function Projetos() {
               <h1 className="font-roboto italic text-emerald-400 font-bold mb-4">
                 Projetos NodeJs
               </h1>
-              <NodeJs />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <NodeJs />
+              </motion.div>
             </div>
           </div>
         </div>
@@ -143,7 +151,13 @@ export default function Projetos() {
               <h1 className="font-roboto italic text-emerald-400 font-bold mb-4">
                 Projetos JavaScript
               </h1>
-              <JavaScript />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <JavaScript />
+              </motion.div>
             </div>
           </div>
         </div>
@@ -159,7 +173,13 @@ export default function Projetos() {
               <h1 className="font-roboto italic text-emerald-400 font-bold mb-4">
                 Projetos Angular
               </h1>
-              <Angular />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Angular />
+              </motion.div>
             </div>
           </div>
         </div>
@@ -175,7 +195,13 @@ export default function Projetos() {
               <h1 className="font-roboto italic text-emerald-400 font-bold mb-4">
                 Projetos NextJs
               </h1>
-              <NextJs />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <NextJs />
+              </motion.div>
             </div>
           </div>
         </div>
@@ -191,7 +217,13 @@ export default function Projetos() {
               <h1 className="font-roboto italic text-emerald-400 font-bold mb-4">
                 Projetos React-native
               </h1>
-              <ReactNative />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <ReactNative />
+              </motion.div>
             </div>
           </div>
         </div>
