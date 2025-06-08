@@ -1,67 +1,50 @@
 "use client";
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { about } from "@/about/aboutMe";
 
 export default function Home() {
-  const [show, setShow] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div
-      className={
-        !show
-          ? "relative flex flex-col items-center justify-center min-h-screen w-full"
-          : "relative flex flex-col items-center justify-center min-h-screen w-full bg-dark text-white"
-      }
-    >
-      <div>
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
+    <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"} min-h-screen transition-colors duration-300`}>
+      <div className="container mx-auto px-4 py-16 flex flex-col items-center text-center">
+        <motion.h1
+          className="text-4xl md:text-5xl font-semibold mb-6"
+          initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
         >
-          <h1
-            className={
-              !show
-                ? "text-4xl font-bold text-gray-800"
-                : "text-4xl font-bold text-white"
-            }
-          >
-            Bem-vindo ao meu portfólio!
-          </h1>
-          <Image
-            className="absolute hover:opacity-40 top-27 left-25 transform -translate-x-1/2 -translate-y-1/2 rounded-full"
-            src="/images/eu.png"
-            alt="eu"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="absolute cursor-pointer top-25 end-0 transform -translate-x-1/2 -translate-y-1/2 rounded-full"
-            src="/images/lua.png"
-            alt="eu"
-            width={100}
-            onClick={() => setShow(!show)}
-            height={100}
-          />
-        </motion.div>
+          Bem-vindo ao meu portfólio
+        </motion.h1>
+
+        <Image
+          src="/images/eu.png"
+          alt="Minha foto"
+          width={150}
+          height={150}
+          className="rounded-full mb-6 border border-gray-400"
+        />
+
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="mb-8 px-4 py-2 border rounded-full text-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+        >
+          Alternar tema
+        </button>
+
+        <section className="max-w-3xl space-y-6 text-base leading-relaxed">
+          <p>{about.data}</p>
+          <p className="text-lg font-medium text-indigo-500">{about.strong}</p>
+          <p>{about.contact}</p>
+          <p>
+            Desenvolvedor com experiência em frontend e backend. Acredito em
+            criar experiências digitais funcionais e elegantes.
+          </p>
+        </section>
       </div>
-      <section className="py-10 text-justify">
-        <p className="flex flex-wrap text-justify ml-20 me-20 font-roboto italic w-dvw-40 text-foreground font-bold">
-          {about.data}
-        </p>
-        <br />
-        <p className="mt-4 text-center max-w-2xl mx-auto">
-          Desenvolvedor com experiência em frontend e backend, quero ajudar você
-          a criar experiências digitais impactantes.
-        </p>
-        <br />
-        <p className="mt-4 text-center max-w-2xl mx-auto">{about.strong}</p>
-        <br />
-        <p className="mt-4 text-center max-w-2xl mx-auto">{about.contact}</p>
-        <br />
-      </section>
     </div>
   );
 }
