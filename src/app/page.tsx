@@ -9,7 +9,11 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"} min-h-screen transition-colors duration-300`}>
+    <div
+      className={`${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+      } min-h-screen transition-colors duration-300`}
+    >
       <div className="container mx-auto px-4 py-16 flex flex-col items-center text-center">
         <motion.h1
           className="text-4xl md:text-5xl font-semibold mb-6"
@@ -23,8 +27,8 @@ export default function Home() {
         <Image
           src="/images/eu.png"
           alt="Minha foto"
-          width={150}
-          height={150}
+          width={120}
+          height={120}
           className="rounded-full mb-6 border border-gray-400"
         />
 
@@ -35,10 +39,49 @@ export default function Home() {
           Alternar tema
         </button>
 
-        <section className="max-w-3xl space-y-6 text-base leading-relaxed">
+        <section className="max-w-2xl space-y-6 text-base leading-relaxed">
           <p>{about.data}</p>
-          <p className="text-lg font-medium text-indigo-500">{about.strong}</p>
-          <p>{about.contact}</p>
+          <p className="text-2xl font-bold text-indigo-600 my-8">
+            Construindo experiências digitais simples e eficientes.
+          </p>
+          <div className="flex justify-center">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              className="mx-auto my-4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="48"
+                height="48"
+                rx="12"
+                fill={darkMode ? "#1e293b" : "#f1f5f9"}
+              />
+              <path
+                d="M18 20L12 24L18 28"
+                stroke="#6366f1"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M30 20L36 24L30 28"
+                stroke="#6366f1"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M26 16L22 32"
+                stroke="#6366f1"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
           <p>
             Desenvolvedor com experiência em frontend e backend. Acredito em
             criar experiências digitais funcionais e elegantes.

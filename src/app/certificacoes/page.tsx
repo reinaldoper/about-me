@@ -4,6 +4,7 @@ import React from "react";
 import { certificates } from "@/about/certifications";
 import CertificationList from "@/components/CertificationList";
 import Link from "next/link";
+import { Move } from "@/components/Move";
 
 const Certificacoes = () => {
   return (
@@ -26,6 +27,7 @@ const Certificacoes = () => {
           ← Voltar ao Sobre
         </Link>
       </div>
+      <Move />
     </div>
   );
 };
