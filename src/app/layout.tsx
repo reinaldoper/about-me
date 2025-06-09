@@ -4,7 +4,6 @@ import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import "./globals.css";
 import Link from "next/link";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function RootLayout({
   children,
