@@ -3,11 +3,24 @@
 import React from "react";
 import { about } from "@/about/aboutMe";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.7,
+      ease: "easeOut"
+    }
+  })
+};
 
 const AboutMe = () => {
   return (
     <div className="relative bg-white overflow-hidden min-h-screen px-4 py-10 md:px-12 max-w-3xl mx-auto flex flex-col justify-between">
-      
       <svg
         className="absolute top-0 left-0 w-full h-32 text-emerald-100 opacity-20 pointer-events-none"
         fill="currentColor"
@@ -17,7 +30,14 @@ const AboutMe = () => {
       </svg>
 
       <div>
-        <div className="flex items-center justify-center mb-6 mt-6">
+        <motion.div
+          className="flex items-center justify-center mb-8 mt-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.7 }}
+          variants={fadeInUp}
+          custom={0}
+        >
           <svg
             className="w-12 h-12 text-emerald-500"
             fill="none"
@@ -31,35 +51,74 @@ const AboutMe = () => {
               d="M12 4v16m8-8H4"
             />
           </svg>
-          <h1 className="ml-3 text-3xl font-bold text-emerald-600">Sobre Mim</h1>
-        </div>
+          <h1 className="ml-3 text-4xl font-extrabold text-emerald-700 tracking-tight drop-shadow-sm">
+            Sobre Mim
+          </h1>
+        </motion.div>
 
-        <p className="mb-6 text-lg leading-relaxed text-gray-700">{about.data.trim()}</p>
+        <motion.p
+          className="mb-8 text-xl leading-relaxed text-gray-800 font-light"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.7 }}
+          variants={fadeInUp}
+          custom={1}
+        >
+          {about.data.trim()}
+        </motion.p>
 
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold text-emerald-500 mb-2">💡 O que você pode esperar de mim</h2>
+        <motion.div
+          className="mb-8 bg-emerald-50 rounded-xl p-6 shadow-sm"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.7 }}
+          variants={fadeInUp}
+          custom={2}
+        >
+          <h2 className="text-xl font-semibold text-emerald-600 mb-2">💡 O que você pode esperar de mim</h2>
           <p className="whitespace-pre-line text-gray-700">{about.skills.trim()}</p>
-        </div>
+        </motion.div>
 
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold text-emerald-500 mb-2">🛠️ Ferramentas do dia a dia</h2>
+        <motion.div
+          className="mb-8 bg-emerald-50 rounded-xl p-6 shadow-sm"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.7 }}
+          variants={fadeInUp}
+          custom={3}
+        >
+          <h2 className="text-xl font-semibold text-emerald-600 mb-2">🛠️ Ferramentas do dia a dia</h2>
           <p className="whitespace-pre-line text-gray-700">{about.tolls.trim()}</p>
-        </div>
+        </motion.div>
 
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-emerald-500 mb-2">🔗 Destaques e Diferenciais</h2>
+        <motion.div
+          className="mb-10 bg-emerald-50 rounded-xl p-6 shadow-sm"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.7 }}
+          variants={fadeInUp}
+          custom={4}
+        >
+          <h2 className="text-xl font-semibold text-emerald-600 mb-2">🔗 Destaques e Diferenciais</h2>
           <p className="whitespace-pre-line text-gray-700">{about.strong.trim()}</p>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex justify-center mt-4 z-10">
+      <motion.div
+        className="flex justify-center mt-4 z-10"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.7 }}
+        variants={fadeInUp}
+        custom={5}
+      >
         <Link
           href="/certificacoes"
-          className="px-6 py-2 border border-emerald-500 rounded-full text-emerald-600 hover:bg-emerald-50 transition font-medium"
+          className="px-6 py-2 border border-emerald-500 rounded-full text-emerald-600 hover:bg-emerald-100 transition font-semibold shadow"
         >
           Ver Certificações →
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };
