@@ -64,7 +64,7 @@ export default function Projetos() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center w-full"
         >
-          {/* SVG Profissional no topo */}
+          
           <div className="mb-6">
             <svg
               width="90"
@@ -80,7 +80,7 @@ export default function Projetos() {
               <circle cx="45" cy="45" r="32" stroke="#0ea5e9" strokeWidth="2" fill="none"/>
             </svg>
           </div>
-          {/* Mensagem de boas-vindas */}
+          
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 text-center drop-shadow">
             Bem-vindo ao meu portfólio de projetos
           </h1>
@@ -91,7 +91,7 @@ export default function Projetos() {
           <h2 className="font-bold flex justify-center items-center text-amber-300 mb-10 text-xl md:text-2xl">
             Projetos em destaque abaixo:
           </h2>
-          {/* Ícones das stacks */}
+          
           <div className="flex flex-col md:flex-row justify-center items-center gap-6">
             <div className="relative group">
               <FaNodeJs
