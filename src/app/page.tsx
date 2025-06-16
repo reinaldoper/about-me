@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { about } from "@/about/aboutMe";
+import AnimatePresenceComponent from "@/components/AnimatePresence";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,34 +22,7 @@ export default function Home() {
       } min-h-screen transition-colors duration-300`}
     >
       
-      <AnimatePresence>
-        {showIntro && (
-          <motion.div
-            className="fixed inset-0 z-50 flex"
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.5 } }}
-          >
-            <motion.div
-              className="flex-1 bg-indigo-500 flex items-center justify-center"
-              initial={{ x: 0 }}
-              animate={{ x: "50vw" }}
-              exit={{ x: 0 }}
-              transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-            >
-              <span className="text-white text-3xl font-bold tracking-widest">Bem-vindo</span>
-            </motion.div>
-            <motion.div
-              className="flex-1 bg-emerald-500 flex items-center justify-center"
-              initial={{ x: 0 }}
-              animate={{ x: "-50vw" }}
-              exit={{ x: 0 }}
-              transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-            >
-              <span className="text-white text-3xl font-bold tracking-widest">ao portfólio</span>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {AnimatePresenceComponent("Bem-vindo", "Ao meu portifólio.")}
 
       
       {!showIntro && (

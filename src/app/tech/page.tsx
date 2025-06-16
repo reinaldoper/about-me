@@ -5,7 +5,7 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import Image from "next/image";
 import TechCarousel from "@/components/TechCarousel";
 import { Move } from "@/components/Move";
-import { motion, AnimatePresence } from "framer-motion";
+import AnimatePresenceComponent from "@/components/AnimatePresence";
 
 const Techs = () => {
   const [fa, setFa] = useState(true);
@@ -26,34 +26,7 @@ const Techs = () => {
         <path d="M0,160L60,154.7C120,149,240,139,360,154.7C480,171,600,213,720,218.7C840,224,960,192,1080,176C1200,160,1320,160,1380,160L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" />
       </svg>
 
-      <AnimatePresence>
-        {showIntro && (
-          <motion.div
-            className="fixed inset-0 z-50 flex"
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.5 } }}
-          >
-            <motion.div
-              className="flex-1 bg-emerald-500 flex items-center justify-center"
-              initial={{ x: 0 }}
-              animate={{ x: "50vw" }}
-              exit={{ x: 0 }}
-              transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-            >
-              <span className="text-white text-3xl font-bold tracking-widest">BACKEND</span>
-            </motion.div>
-            <motion.div
-              className="flex-1 bg-cyan-500 flex items-center justify-center"
-              initial={{ x: 0 }}
-              animate={{ x: "-50vw" }}
-              exit={{ x: 0 }}
-              transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-            >
-              <span className="text-white text-3xl font-bold tracking-widest">FRONTEND</span>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {AnimatePresenceComponent("BACKEND", "FRONTEND")}
 
       {!showIntro && (
         <div className="flex flex-col items-center">
