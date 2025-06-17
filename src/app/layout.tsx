@@ -95,6 +95,11 @@ export default function RootLayout({
                 Tecnologias
               </a>
             </li>
+            <li>
+              <a href="/certificacoes" className="hover:underline">
+                Certificados
+              </a>
+            </li>
           </ul>
         </nav>
         <body suppressHydrationWarning>{children}</body>
