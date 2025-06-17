@@ -5,20 +5,14 @@ export const about = {
   skills: `
   💡 O que você pode esperar de mim:
   - Interfaces modernas, responsivas e com foco mobile-first.
-  - SEO estratégico para te colocar no topo do Google.
   - Soluções centradas no usuário, sempre alinhadas aos seus objetivos de negócio.
-  - Código limpo, escalável e fácil de manter.
-  - Boas práticas de versionamento, testes e deploy contínuo.
   - Comunicação clara, empatia e visão de produto para colaborar com times diversos.
   `,
   
   tolls: `
   🛠️ Minhas ferramentas do dia a dia**:
   - Frontend: React, Next.js, TailwindCSS, Material UI, TypeScript.
-  - Backend: Node.js, Express, MySQL, PostgreSQL, Prisma, TypeORM, Sequelize.
-  - Mobile: React Native, Expo, Native Base.
-  - Testes: Jest, React Testing Library, Supertest.
-  - DevOps: Docker, Docker Compose, GitHub Actions, Railway, Vercel.
+  - Backend: Node.js, Nest.js, Express, MySQL, PostgreSQL, Prisma, TypeORM, Sequelize.
   `,
   
   strong: `
